@@ -40,5 +40,15 @@ public class Variables
         Debug.Log(Name + " " + Surname);
         Debug.Log(string.Concat(Name, " ", Surname));
 
+        if(/* Condition */ z <= 200)                    //Conditional With
+        { /* True Part*/
+            Debug.Log("Z is less than 200");            //True Part
+        }
+        else
+        { /* False Part */
+            Debug.Log("Z is greater than 200");         //False Part
+        }
+
+        Debug.Log( (z >= 150) ? "Z is greater than 150" : "Z is less than 150"); //Ternary Opperator
     }
 }
