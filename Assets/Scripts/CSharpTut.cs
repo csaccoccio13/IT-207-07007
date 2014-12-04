@@ -40,7 +40,7 @@ public class Variables
         Debug.Log(Name + " " + Surname);
         Debug.Log(string.Concat(Name, " ", Surname));
 
-        if(/* Condition */ z <= 200)                    //Conditional With
+        if(/* Condition or exoression */ z <= 200)                    //Conditional With
         { /* True Part*/
             Debug.Log("Z is less than 200");                //True Part
         }
@@ -61,5 +61,17 @@ public class Variables
         {
             Debug.Log(i);       
         }
+
+		/* Pre-condition while */
+		/* will execute 0-* (0+) */
+		bool isLooping = true;
+		int counter = 0;
+		while(/* condition */ isLooping )
+		{
+			/* loop body */
+			/* Debug.Log (++counter); */
+			Debug.Log (counter++);
+			isLooping = counter <= 100;
+		}
     }
 }
